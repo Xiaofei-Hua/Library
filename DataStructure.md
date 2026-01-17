@@ -1,4 +1,4 @@
-# **Data Structure**
+# Data Structure
 
 ---
 
@@ -32,7 +32,7 @@ $S_x = (x + 1) \times (x + 2) \times \sum_{i = 1}^{x}c_i - (2 \times x + 3) \tim
 
 ****
 
-## $DFS$ 序
+## DFS 序
 
 ### 链问题：
 
@@ -178,3 +178,15 @@ for (int i = 0; ~n >> i & 1; i++) {
 int l = n & -n;
 b.insert(b.end(), a.end() - l, a.end());
 ```
+
+
+
+## 线段树中非平凡的 pull 操作
+
+楼房重建 [P4198 楼房重建 - 洛谷](https://www.luogu.com.cn/problem/P4198)
+
+简化题意：求一个序列经过单调栈后栈中保留元素的个数，带修多次询问
+
+pull 操作的时间复杂度为 $log(n)$ 
+
+
